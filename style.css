@@ -1,0 +1,54 @@
+  p {
+      color: orange;
+  }
+
+  #container {
+      height: 500px;
+      background-color: lime;
+  }
+
+  .first-div {
+      margin: 10px;
+      /* padding: 20px; */
+      /* padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 20px; */
+
+      /* padding: 25px (top and bottom) 20px (right and left);  */
+
+      /* padding: 25px (top) 15px (right and left) 30px (bottom); */
+
+      /* padding: 25px (top) 15px (right) 30px (bottom) 20px (left); */
+
+      padding: 25px 15px 30px 20px;
+
+      background-color: #000000;
+
+      /* 
+    r -red g - green b - blue ()
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+    color name - grey
+    #FF1 -> #FFFF11
+    hex code - #000000
+    */
+  }
+
+  span {
+      color: purple;
+      background-color: black;
+  }
+
+  .grid-container {
+      width: 600px;
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      gap: 10px;
+  }
+
+  .box {
+      background: red;
+      padding: 20px;
+      margin: 1px;
+      color: white;
+  }
