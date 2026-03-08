@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sales-grid.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div>
+                <a href="./dashboard.html">Dashboard</a>
+            </div>
+            <div>
+                <a href="./supplierRegistration.html">Supplier management</a>
+            </div>
+            <div>
+                <a href="./sales/salesRegistration.html">Sales management</a>
+            </div>
+        </div>
+        <div class="content">
+            <form action="" method="get">
+                <h1 class="title-1">Sales Registration</h1>
+                <div class="input-container-1">
+                    <label for="salesDate">Sales Date</label>
+                    <input type="date" name="" id="salesDate">
+                </div>
+                <div class="input-container-2">
+                    <label for="salesPerson">Sales Person</label>
+                    <select name="" id="salesPerson">
+                        <option value="">Select a Representative</option>
+                        <option value="tj">Tom Jack</option>
+                        <option value="jd">Jane Doe</option>
+                        <option value="lm">Lwanga Mwanje</option>
+                    </select>
+                </div>
+
+                <h2 class="title-2">Customer Details</h2>
+                <div class="input-container-3">
+                    <label for="fullname">Name</label>
+                    <input type="text" name="" id="fullname" placeholder="Enter full name">
+                </div>
+                <div class="input-container-4">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" name="" id="phoneNumber" placeholder="Enter Phone Number">
+                </div>
+                <div class="input-container-5">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="Enter email">
+                </div>
+                <div class="input-container-6">
+                    <label for="customerType">Customer Type</label>
+                    <select name="" id="customerType">
+                        <option value="">Select customer type</option>
+                        <option value="retail">Retail</option>
+                        <option value="wholesale">Wholesale</option>
+                    </select>
+                </div>
+
+                <h2 class="title-3">Items</h2>
+
+                <section class="item-container">
+                    <div class="item">
+                        <label for="pdtId">Pdt Id</label>
+                        <input type="text" name="" id="pdtId">
+                    </div>
+
+                    <div class="item">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="" id="quantity">
+                    </div>
+
+                    <div class="item">
+                        <label for="unitPrice">Unit Price</label>
+                        <input type="number" name="" id="unitPrice">
+                    </div>
+                    <div class="item">
+                        <label for="pdtId">Pdt Id</label>
+                        <input type="text" name="" id="pdtId">
+                    </div>
+
+                    <div class="item">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="" id="quantity">
+                    </div>
+
+                    <div class="item">
+                        <label for="unitPrice">Unit Price</label>
+                        <input type="number" name="" id="unitPrice">
+                    </div>
+                </section>
+
+                <br>
+                <section class="btn-section">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Submit</button>
+                </section>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

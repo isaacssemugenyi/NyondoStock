@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 244);
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "sidebar content";
+    grid-template-columns: 1fr 4fr;
+    gap: 3px;
+    padding: 5px;
+    height: 100vh;
+}
+
+.sidebar {
+    border-right: 1px solid grey;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+input,
+select {
+    height: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: rgb(248, 248, 244);
+}
+
+select {
+    height: 32px;
+}
+
+form {
+    border: 1px solid black;
+    width: 90%;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 10px;
+    display: grid;
+    grid-template-areas:
+        "title-1 title-1"
+        "input-container-1 input-container-2"
+        "title-2 title-2"
+        "input-container-3 input-container-4"
+        "input-container-5 input-container-6"
+        "title-3 title-3"
+        "item-container item-container"
+        "btn-section btn-section";
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.title-1 {
+    grid-area: title-1;
+}
+
+.title-2 {
+    grid-area: title-2;
+}
+
+.title-3 {
+    grid-area: title-3;
+}
+
+.input-container-1 {
+    grid-area: input-container-1;
+}
+
+.input-container-2 {
+    grid-area: input-container-2;
+}
+
+.input-container-3 {
+    grid-area: input-container-3;
+}
+
+.input-container-4 {
+    grid-area: input-container-4;
+}
+
+.input-container-5 {
+    grid-area: input-container-5;
+}
+
+.input-container-6 {
+    grid-area: input-container-6;
+}
+
+.item-container {
+    grid-area: item-container;
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.btn-section {
+    grid-area: btn-section;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn-section>button {
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.btn-section>button[type="reset"] {
+    justify-self: start;
+    background-color: white;
+    color: #0033AA;
+    border: 1px solid #0033AA;
+    font-weight: bold;
+}
+
+.btn-section>button[type="submit"] {
+    justify-self: end;
+    background-color: #0033AA;
+    color: white;
+    border: transparent;
+    font-weight: bold;
+}
+
+form>h1,
+form>h2 {
+    text-align: center;
+}
