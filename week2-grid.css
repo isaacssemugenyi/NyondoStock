@@ -1,0 +1,19 @@
+.grid-container {
+    width: 600px;
+    display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+    /* grid-template-rows: 2fr 1fr 1.5fr 3fr; */
+    /* grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr; */
+    grid-template: 1fr 2fr / 4fr 3fr;
+    /* column-gap: 20px;
+    row-gap: 10px; */
+
+    gap: 20px;
+}
+
+.box {
+    background-color: red;
+    padding: 20px;
+    margin: 1px;
+}
